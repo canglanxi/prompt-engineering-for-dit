@@ -163,6 +163,7 @@ Full Prompt:
 ```text
 leading lines, vanishing point, harsh fluorescent ceiling light, cold artificial illumination, deep depth of field, everything in focus, surveillance camera angle, highangle shot, empty institutional corridor, no people, endless repeating doorways, abandoned hospital hallway, cold clinical color palette, desaturated tones, raytraced reflections on linoleum floor, dusty air particles in light beams, eerie atmosphere, stagnant air, oppressive silence
 ```
+<img width="533" height="800" alt="Copied_Item_1774976024380" src="https://github.com/user-attachments/assets/abebbc0f-7221-438d-a5c4-07b7e53ec07e" />
 
 Key Point
 
@@ -236,6 +237,9 @@ Full Prompt
 ```text
 asymmetrical composition, subject on left third, ambient moonlight, subsurface scattering lighting, sharp focus on eyes, shallow depth of field, eyelevel view, 1girl, extremely long teal hair in twintails, sleeveless white top, black pleated skirt, glossy black thighhigh stockings, riverside at night, looking back over shoulder, faint smile, distant river, faint reflections, 16:9
 ```
+<img width="600" height="338" alt="Copied_Item_1774976094671" src="https://github.com/user-attachments/assets/fd12f23f-f9ad-4402-8ab2-07cac4073251" />
+<img width="600" height="338" alt="Copied_Item_1774976065041" src="https://github.com/user-attachments/assets/b5dbdb13-e8a6-4842-bb29-b527eb883eb2" />
+
 
 ---
 
