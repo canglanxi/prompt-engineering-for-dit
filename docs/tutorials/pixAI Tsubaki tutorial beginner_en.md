@@ -163,7 +163,6 @@ Full Prompt:
 ```text
 leading lines, vanishing point, harsh fluorescent ceiling light, cold artificial illumination, deep depth of field, everything in focus, surveillance camera angle, highangle shot, empty institutional corridor, no people, endless repeating doorways, abandoned hospital hallway, cold clinical color palette, desaturated tones, raytraced reflections on linoleum floor, dusty air particles in light beams, eerie atmosphere, stagnant air, oppressive silence
 ```
-<img width="533" height="800" alt="Copied_Item_1774976024380" src="https://github.com/user-attachments/assets/abebbc0f-7221-438d-a5c4-07b7e53ec07e" />
 
 Key Point
 
