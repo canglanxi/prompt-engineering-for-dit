@@ -1,7 +1,7 @@
 ```markdown
 # AI生圖入門：從購物清單到設計畫面
 
-> 本教程基於 DiT 模型，示範均以 **tsubaki.2** 為準
+> 本教程基於 DiT 模型，示範均以 tsubaki.2 為準
 
 很多人用 AI 畫圖時，會遇到一個共同的困惑：明明寫了很多詞，但出來的圖總是差一點——要嘛很平、要嘛很怪、要嘛沒有重點。
 
@@ -9,8 +9,8 @@
 
 這份教程會用最簡單的方式，幫你建立一種新的思考方式。我們只專注兩件事：
 
-1. **怎麼想**：設計畫面，而不是列購物單
-2. **怎麼做**：用 Prompt 和簡單工具來實現你的設計
+1. 怎麼想：設計畫面，而不是列購物單
+2. 怎麼做：用 Prompt 和簡單工具來實現你的設計
 
 ---
 
@@ -29,11 +29,7 @@
 
 ## 第二部分：你的 Prompt 是購物清單還是視覺設計？
 
-大多數人寫 Prompt，是這樣的：
-
-```
-
-a girl, long hair, skirt, night, rain, city
+大多數人寫 Prompt，是這樣的：a girl, long hair, skirt, night, rain, city
 
 ```
 
@@ -48,8 +44,6 @@ a girl, long hair, skirt, night, rain, city
 > **構圖 → 光線 → 景深 → 視角 → 主體 → 環境 → 細節**
 
 來看一個實際的例子：
-
-```
 
 asymmetrical composition, subject on left third, soft side lighting, 
 shallow depth of field with focus on eyes, low angle view, 
