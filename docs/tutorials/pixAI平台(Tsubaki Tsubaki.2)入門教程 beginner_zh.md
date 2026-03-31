@@ -163,6 +163,9 @@ empty hallway, fluorescent light, no people
 leading lines, vanishing point, harsh fluorescent ceiling light, cold artificial illumination, deep depth of field, everything in focus, surveillance camera angle, highangle shot, empty institutional corridor, no people, endless repeating doorways, abandoned hospital hallway, cold clinical color palette, desaturated tones, raytraced reflections on linoleum floor, dusty air particles in light beams, eerie atmosphere, stagnant air, oppressive silence
 ```
 
+<img width="533" height="800" alt="Copied_Item_1774975811919" src="https://github.com/user-attachments/assets/37af56bb-d921-424c-9684-77414ed51e06" />
+
+
 關鍵點
 
 當你用引導線 + 無人這個組合時，AI 會自動進入閾值空間，幫你補上所有相關的氛圍細節——冷色調、灰塵、壓抑感、監視器視角……這些都不是你寫的，而是模型自動填充的。
@@ -233,6 +236,10 @@ Miku, night, riverside, anime style
 ```text
 asymmetrical composition, subject on left third, ambient moonlight, subsurface scattering lighting, sharp focus on eyes, shallow depth of field, eyelevel view, 1girl, extremely long teal hair in twintails, sleeveless white top, black pleated skirt, glossy black thighhigh stockings, riverside at night, looking back over shoulder, faint smile, distant river, faint reflections, 16:9
 ```
+<img width="600" height="338" alt="Copied_Item_1774975860153" src="https://github.com/user-attachments/assets/d1aba185-0225-4412-bd29-d883348e76e7" />
+
+<img width="600" height="338" alt="Copied_Item_1774975893519" src="https://github.com/user-attachments/assets/55aeaeec-cc8e-4e5d-968b-76e4a963ff7a" />
+
 
 ---
 ## 第七部分：什麼時候用角色名，什麼時候不用？
