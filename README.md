@@ -141,7 +141,6 @@ tau-gen/
 └── examples/
 ├── miku_riverside.md        # 初音案例（結構式 vs 購物清單）
 ├── liminal_space.md         # 閾值空間案例（結構條件觸發原型）
-└── cross_platform_qwen.md   # L 站 qwen 跨平台驗證
 
 ```
 
