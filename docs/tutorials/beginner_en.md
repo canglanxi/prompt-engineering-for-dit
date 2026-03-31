@@ -1,7 +1,7 @@
 ```markdown
 # AI Image Generation for Beginners: From Shopping List to Visual Design
 
-> This tutorial is based on the DiT model. All demonstrations follow the ＊*tsubaki.2** standard.
+> This tutorial is based on the DiT model. All demonstrations follow the tsubaki.2 standard.
 
 Many people encounter a common frustration when using AI to generate images: they write plenty of prompts, but the result always falls short—either flat, strange, or lacking focus.
 
