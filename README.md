@@ -59,8 +59,8 @@ DiT模型（Tsubaki.2）AI生圖系統化教程：七步結構法、原型導航
 
 ### 3. 用特徵描述取代角色名
 
-- ❌ 不寫「Hatsune Miku」
-- ✅ 寫「teal twin-tails, black pleated skirt, digital idol aesthetic」
+- 不寫「Hatsune Miku」
+- 寫「teal twin-tails, black pleated skirt, digital idol aesthetic」
 
 ### 4. 刪除「masterpiece / best quality / 8k」這類評價詞
 
@@ -76,7 +76,7 @@ DiT模型（Tsubaki.2）AI生圖系統化教程：七步結構法、原型導航
 
 ## 範例對比
 
-### ❌ 購物清單式寫法（容易落入平均區）
+### 購物清單式寫法（容易落入平均區）
 
 ```
 
