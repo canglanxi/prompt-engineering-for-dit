@@ -1,8 +1,6 @@
 # prompt-engineering-for-dit
 DiT模型（Tsubaki.2 /FLUX.1 / FlUX.1Dev）AI生圖系統化教程：七步結構法、原型導航、光照六層級、τ-Gen提示詞轉譯器
 
-好的，我把你的內容整理成結構清晰的 Markdown 格式，直接複製貼上到 README.md 就可以：
-
 # τ-Gen (Tau-Gen)
 
 一套基於擴散模型生成機制的「泛化導航」協議
