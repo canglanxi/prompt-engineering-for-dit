@@ -137,8 +137,6 @@ tau-gen/
 │   └── tools/                   # 工具篇
 │       └── decision_translator_v1.1.md  # τ-Gen 整合版轉譯工具
 └── examples/
-├── miku_riverside.md        # 初音案例（結構式 vs 購物清單）
-├── liminal_space.md         # 閾值空間案例（結構條件觸發原型）
 
 ```
 
