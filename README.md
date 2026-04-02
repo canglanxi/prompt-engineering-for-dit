@@ -119,24 +119,17 @@ faint smile, distant river, faint reflections
 ```
 
 tau-gen/
-├── README.md                    # 你正在看的這份文件
+├── README.md                    # 你正在看的這份README
 ├── LICENSE                      # CC BY-NC-SA 4.0
 ├── docs/
 │   ├── theory/                  # 理論篇
 │   │   ├── diffusion_dialogue.md      # 與擴散模型對話
 │   │   ├── archetype_navigation.md    # 原型導航法
-│   │   └── generalization_memory_average.md
-│   ├── protocols/               # 協議篇
-│   │   ├── TPW.md               # Token Position Weight
-│   │   ├── AN.md                # Archetype Navigator
-│   │   ├── PMI.md               # Physical Material Injector
-│   │   └── CA.md                # Contrast Anchor
 │   ├── tutorials/               # 教程篇
 │   │   ├── beginner_zh.md       # 入門教程（中文）
 │   │   └── beginner_en.md       # 入門教程（英文）
 │   └── tools/                   # 工具篇
 │       └── decision_translator_v1.1.md  # τ-Gen 整合版轉譯工具
-└── examples/
 
 ```
 
