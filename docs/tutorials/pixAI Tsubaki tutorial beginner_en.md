@@ -236,10 +236,8 @@ Full Prompt
 ```text
 asymmetrical composition, subject on left third, ambient moonlight, subsurface scattering lighting, sharp focus on eyes, shallow depth of field, eyelevel view, 1girl, extremely long teal hair in twintails, sleeveless white top, black pleated skirt, glossy black thighhigh stockings, riverside at night, looking back over shoulder, faint smile, distant river, faint reflections, 16:9
 ```
-<img width="600" height="338" alt="Copied_Item_1774976094671" src="https://github.com/user-attachments/assets/fd12f23f-f9ad-4402-8ab2-07cac4073251" />
-<img width="600" height="338" alt="Copied_Item_1774976065041" src="https://github.com/user-attachments/assets/b5dbdb13-e8a6-4842-bb29-b527eb883eb2" />
-
-
+<img width="600" height="338" alt="Copied_Item_1775449026425" src="https://github.com/user-attachments/assets/a8576e05-92c8-4aa5-84d0-023f0b355d52" />
+<img width="600" height="338" alt="Copied_Item_1775449005987" src="https://github.com/user-attachments/assets/195eb86d-c03a-4bdb-9add-c669ebf66492" />
 ---
 
 ## Part 7: When to Use Character Names, When Not To
