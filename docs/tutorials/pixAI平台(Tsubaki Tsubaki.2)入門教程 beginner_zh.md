@@ -233,11 +233,9 @@ Miku, night, riverside, anime style
 ```text
 asymmetrical composition, subject on left third, ambient moonlight, subsurface scattering lighting, sharp focus on eyes, shallow depth of field, eyelevel view, 1girl, extremely long teal hair in twintails, sleeveless white top, black pleated skirt, glossy black thighhigh stockings, riverside at night, looking back over shoulder, faint smile, distant river, faint reflections, 16:9
 ```
-<img width="600" height="338" alt="Copied_Item_1774975860153" src="https://github.com/user-attachments/assets/d1aba185-0225-4412-bd29-d883348e76e7" />
+<img width="600" height="338" alt="Copied_Item_1775448876723" src="https://github.com/user-attachments/assets/62ced1db-f7e2-4f71-8da2-ccb228fbc810" />
 
-<img width="600" height="338" alt="Copied_Item_1774975893519" src="https://github.com/user-attachments/assets/55aeaeec-cc8e-4e5d-968b-76e4a963ff7a" />
-
-
+<img width="600" height="338" alt="Copied_Item_1775448885898" src="https://github.com/user-attachments/assets/5de30cea-8ae2-4f60-92b9-7913933448d9" />
 ---
 ## 第七部分：什麼時候用角色名，什麼時候不用？
 
