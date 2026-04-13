@@ -237,6 +237,7 @@ asymmetrical composition, subject on left third, ambient moonlight, subsurface s
 
 <img width="600" height="338" alt="Copied_Item_1775448885898" src="https://github.com/user-attachments/assets/5de30cea-8ae2-4f60-92b9-7913933448d9" />
 ---
+
 ## 第七部分：什麼時候用角色名，什麼時候不用？
 
 這是一個常見的困惑。我們來釐清：
