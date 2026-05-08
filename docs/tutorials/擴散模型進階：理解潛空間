@@ -1,0 +1,240 @@
+```markdown
+# 擴散模型進階：理解潛空間退化，學會引導 Φ 區域
+
+**一份寫給「已經玩膩預設模型」的人的實操教程**  
+不教你「寫更多關鍵詞」，教你理解模型為什麼「不聽話」
+
+---
+
+## 0. 適用人群
+
+- 你已經用過 MJ / SD / Flux / NovelAI / PixAI 一段時間
+- 你發現：同樣的提示詞，換種子結果天差地別
+- 你發現：二次元模型有時能出寫實圖，但極不穩定
+- 你發現：儲存的「風格代碼」換主體就失效
+- 你想知道：這到底是我寫 prompt 的問題，還是模型的問題？
+
+答案是：都不是。這是模型潛空間的幾何結構問題。
+
+---
+
+## 你將獲得什麼
+
+讀完這份教程，你將能：
+
+- 解釋為什麼「換了一百個種子，圖都不變」
+- 知道如何讓二次元模型穩定生成寫實圖
+- 理解為什麼「風格代碼」換主體就失效
+- 掌握一套從退化理論推導出來的 prompt 原則（不靠玄學）
+
+---
+
+## 1. 核心概念（不講廢話）
+
+### θ（凍結的參數）
+
+- 模型訓練完成後就固定不變的部分
+- 它定義了模型「能畫什麼」的底層能力
+
+### Φ（語義映射）
+
+- 從潛空間 z_T 到最終語義空間 \mathcal{M} 的映射
+- \Phi = \pi \circ \Psi_{T \to 0}
+
+### 潛空間退化
+
+- \Phi 不是一對一的，而是多對一
+- 潛空間中大多數方向是語義不變的（纖維）
+- 只有少數方向能改變語義（橫截方向）
+
+**一句話：**  
+模型不是「不理解你」，而是它的內部幾何結構決定了——  
+大部分隨機擾動都是無效的，只有精確命中橫截方向才能改變結果。
+
+---
+
+## 2. 兩個最重要的幾何概念
+
+| 概念 | 含義 | 實際表現 |
+|------|------|----------|
+| 纖維 | 潛空間中映射到相同語義結果的區域 | 換了種子，角色、構圖、風格幾乎不變 |
+| 橫截方向 | 跨越不同纖維的方向 | 改變 prompt 中的一個關鍵詞，語義突變 |
+
+**這就是「種子彩票」的數學根源：**  
+你換了一百個種子覺得都沒差，不是模型穩定，而是那些種子全落在同一根纖維裡。
+
+---
+
+## 3. 三種退化（及其利用方式）
+
+### 3.1 潛空間退化（你控制不了，但可以避開）
+
+- 現象：大部分種子落在纖維裡，語義不變
+- 應對：不要依賴隨機種子，用 prompt 主動引導橫截方向
+
+### 3.2 Prompt 退化（你每天都在面對）
+
+- 現象：不同詞語被模型壓向同一個統計原型（羅小黑、貓娘、哆啦A夢都是「貓」）
+- 應對：用自然語言描述，不要用 Danbooru 標籤
+
+| 不要用 | 改用 |
+|--------|------|
+| 1girl | A young woman in her early twenties |
+| extremely long teal twin-tails | Very long teal hair styled in two flowing ponytails |
+| blue eyes | Bright blue eyes with a sharp, focused gaze |
+
+### 3.3 語義纖維衝突（最常翻車的地方）
+
+- 現象：prompt 同時激活兩條不相容的纖維
+- 案例：1girl + photorealistic = 二次元標籤 vs 寫實要求
+- 應對：選定一條纖維，不要跨纖維拔河
+
+---
+
+## 4. 寫 prompt 的三個原則（從退化理論推導）
+
+### 原則一：語義錨點要夠密
+
+\Phi 是多對一的，模糊 prompt 會被拉向統計中心。
+
+**應對：** 寫夠長的 prompt，鎖定材質、光線、構圖、細節。
+
+**短 prompt（容易退化）：**
+
+```
+a girl walking in the rain, anime style
+```
+
+**長 prompt（穩定）：**
+
+```
+Inverted triangle composition. A woman in her late twenties walks alone on a wet city street at night. Low-key lighting from dim traffic and neon signs. Shallow depth of field, focus on her tired face and empty eyes. She wears a white office blazer, black ponytail, slight slouch in posture. The surrounding crowd is blurred. Photorealistic, shot on 85mm lens at f/1.8, film grain, soft shadows, volumetric fog from street haze.
+```
+
+### 原則二：不要用標籤代替描述
+
+標籤（1girl、solo、from above）是 Danbooru 格式，強錨定在二次元纖維。  
+跨纖維移動時，必須用自然語言。
+
+### 原則三：NP 是必需的
+
+負向提示詞用於抑制來源纖維特徵。
+
+**NP 必須加：**
+
+```
+cel shading, line art, illustration anime, illustration, manga, cartoon painting, digital art, brush stroke, render, CGI
+```
+
+---
+
+## 5. 實戰案例
+
+### ✅ 案例 A：二次元模型出寫實肖像
+
+- 模型：Tsubaki.2（二次元微調模型）
+- 目標：寫實肖像，不要二次元特徵
+
+**Prompt 結構：**
+
+```
+Rule of thirds composition, subject on left third, soft diffused window light from right, subsurface scattering on skin, visible pores and skin texture, shallow depth of field with focus on eyes.
+A young East Asian woman, age approximately 20-25, natural relaxed expression, slight head tilt.
+Her hair is extremely long, straight, black, falling past her waist.
+She wears a casual white cotton blouse, black pleated skirt.
+Photographed with 85mm lens, f/1.8, ambient light, no direct flash, film grain, slight vignette, soft shadows, neutral color balance.
+Photorealistic, high resolution, shot on high-end mirrorless camera.
+```
+
+**NP：**
+
+```
+cel shading, line art, illustration anime, illustration, manga, cartoon painting, digital art, brush stroke, render, CGI
+```
+
+**關鍵點：**
+
+- 沒有 1girl
+- 沒有二次元髮型（teal twin-tails）
+- 用 NP 抑制二次元特徵
+- photorealistic + 鏡頭參數鎖定寫實纖維
+
+---
+
+### ❌ 案例 B1：不使用 NP（2.5D 圖像）
+
+同樣的 prompt，去掉 NP。  
+結果：一眼就能看出是 AI 圖像，介於二次元和寫實之間的「2.5D 假圖」。
+
+---
+
+### ❌ 案例 B2：偽寫實的橘貓（纖維邊緣）
+
+**Prompt：**
+
+```
+Central composition, one orange Chinese domestic tabby cat sleeping peacefully on a soft cat bed, the cat bed placed on a windowsill, the cat curled up in a relaxed sleeping posture with paws tucked under body, eyes closed, whiskers relaxed, harsh midday sunlight streaming through the window directly behind the cat, creating strong backlighting and warm rim light on fur edges, shallow depth of field with focus locked on the cat's face and body, background heavily blurred, window visible behind showing blue sky with white soft clouds outside, 85mm lens at f/1.8 aperture, ambient natural lighting only no flash, soft diffused shadows under the cat, film grain texture added, subtle dark vignette at frame corners, neutral color balance across the image, photorealistic rendering, high resolution detail visible on cat fur texture, whiskers, and cat bed fabric weave, shot on a high-end mirrorless camera, professional grade image quality
+```
+
+這張圖像照片，但不是照片 —— 紋理正確但光影幾何有偏差，落在纖維邊緣，沒有完全進入寫實流形。
+
+**結論：** 不是所有寫實描述都會穩定落在寫實纖維。邊緣案例仍然存在。
+
+---
+
+## 6. 常見誤區
+
+| 誤區 | 正確理解 |
+|------|----------|
+| 「模型不理解我」 | 模型理解，但 \Phi 的退化結構讓它難以命中橫截方向 |
+| 「換 seed 碰運氣」 | 機率極低，因為大部分種子落在纖維裡 |
+| 「風格代碼有用」 | 僅限完全相同的主體、構圖、場景；換主體就失效 |
+| 「CFG 越高越好」 | 過高會滑入不穩定退化區（荒誕的圖像） |
+
+---
+
+## 7. 工具箱
+
+### 推薦做的事
+
+| 工具 | 用途 |
+|------|------|
+| 長 prompt + 結構化 | 提供高資訊量語義錨點，壓縮 \Phi 的條件熵 |
+| 自然語言代替標籤 | 跨纖維移動，不被錨定在二次元區域 |
+| NP 抑制來源纖維特徵 | |
+| 適度 CFG（7–9） | 放大 prompt 牽引力 |
+| 多步工作流 | 二次元生成 → ControlNet + 寫實模型轉繪 |
+
+**CFG 補充說明**
+
+- CFG 偏低（< 5）：prompt 影響力弱，結果偏向模型默認分佈（二次元）
+- CFG 偏高（> 12）：可能滑入退化區，生成「精緻但荒謬」的圖像
+
+### 不建議做的事
+
+- 只換 seed 碰運氣（機率極低）
+- 在跨風格時仍用 Danbooru 標籤（會被拉回原纖維）
+- CFG 無腦拉高超過 12（大概率會出現你不喜歡的東西）
+
+---
+
+## 8. 速查表（列印用）
+
+| 你遇到的問題 | 可能的原因 | 解決方案 |
+|--------------|------------|----------|
+| 換種子圖不變 | 種子落在同一根纖維裡 | 改 prompt，不要只換 seed |
+| 二次元模型出不了寫實圖 | 標籤（1girl）錨定在二次元纖維 | 改用自然語言描述主體 |
+| 儲存的風格代碼失效 | 換主體 = 跨纖維移動 | 不要依賴風格代碼 |
+| CFG 越高越怪 | 滑入不穩定退化區 | 降低 CFG（試試 5–7） |
+
+---
+
+## 9. 最後的話
+
+這份教程教你的不是「怎麼寫更好的提示詞」。  
+它教你的是：理解模型為什麼「不聽話」，然後繞過它的不聽話。
+
+- 如果你只是想要「好看的圖」，用 MJ 或 Flux 預設設定就夠了
+- 如果你想要精確控制、跨風格遷移、理解模型邊界  
+  —— 那這套框架就是為你準備的
+```
