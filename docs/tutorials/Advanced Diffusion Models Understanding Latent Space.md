@@ -3,7 +3,7 @@
 
 **A practical guide for those who've outgrown default models**  
 Not about "writing more keywords" — about understanding why models "don't listen"
-
+```
 ---
 
 ## 0. Target Audience
