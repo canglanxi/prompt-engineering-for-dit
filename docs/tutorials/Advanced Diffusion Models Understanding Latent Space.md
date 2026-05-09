@@ -158,10 +158,9 @@ cel shading, line art, illustration anime, illustration, manga, cartoon, paintin
 ---
 
 ### ❌ Case B1: Without Negative Prompts (2.5D images)
-
-Same prompt, negative prompts removed.
 <img width="450" height="800" alt="Copied_Item_1778314013693" src="https://github.com/user-attachments/assets/e2c43558-14a8-43c6-b811-c9df2802f014" />
 
+Same prompt, negative prompts removed.
 Result: Clearly AI-generated images, stuck in the uncanny valley between anime and realism — "2.5D fake photos"
 
 ---
